@@ -106,4 +106,3 @@ if __name__ == '__main__':
     main()
 
 
-    "Most scripts process data sequentially. My solutions use Parallel Multiprocessing to utilize 100% of your server's power, reducing processing time by up to 10x."
