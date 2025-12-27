@@ -1,0 +1,14 @@
+services:
+  image-processor:
+    build:
+      context: .
+      dockerfile: docker/Dockerfile
+    container_name: high-volume-image-processor
+    volumes:
+      - ./data:/app/data  # Mount the WHOLE data folder
+    environment:
+      - INPUT_DIR=/app/data/input
+      - OUTPUT_DIR=/app/data/output
+      - LOG_FILE=/app/data/processing_errors.log
+      - PYTHONUNBUFFERED=1
+    restart: "no"
