@@ -94,7 +94,7 @@ ls -lh data/output/
 
 ---
 
-## 🛠️ Customization
+## Customization
 
 ### Modify Processing Logic
 
